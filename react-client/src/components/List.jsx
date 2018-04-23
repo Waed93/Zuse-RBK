@@ -1,10 +1,26 @@
 import React from 'react';
-import ListItem from './ListItem.jsx';
 
 const List = (props) => (
-  <div>
-    There are { props.items.length } items.
-    { props.items.map(item => <ListItem item={item}/>)}
+  <div >
+    
+   
+    {props.items.map(item => 
+    		              <div id='List'>    
+
+                      <table id ='table'>
+                    <tr>
+                      <th>{item.name}</th>
+      
+                     </tr> 
+                     <tr>
+                      <td>{item.content}</td>
+                       </tr>   
+
+                      </table>
+                     <br></br>
+    		              </div>
+      
+    )}  
   </div>
 )
 
